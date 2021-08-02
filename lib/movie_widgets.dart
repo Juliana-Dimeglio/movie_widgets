@@ -1,7 +1,6 @@
 library movie_widgets;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'widgets/original_title_widget.dart';
+export 'widgets/overview_widget.dart';
+export 'widgets/movie_image_widget.dart';
+export 'widgets/movies_information_widget.dart';
