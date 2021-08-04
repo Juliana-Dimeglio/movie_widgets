@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 class BasicPage extends StatelessWidget {
-   final Widget widget;
+  final Widget bodyWidget;
 
   const BasicPage({
     Key? key,
-    required  this.widget,
+    required this.bodyWidget,
   }) : super(key: key);
 
   @override
@@ -21,7 +21,7 @@ class BasicPage extends StatelessWidget {
           ),
         ),
       ),
-      body: widget,
+      body: bodyWidget,
     );
   }
 }

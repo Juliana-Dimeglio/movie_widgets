@@ -55,12 +55,18 @@ class _HomePageState extends State<HomePage> {
         itemCount: _routeList.length,
         itemBuilder: (BuildContext context, int index) {
           return Padding(
-            padding: EdgeInsets.all(NumericConstants.paddingButton),
+            padding: EdgeInsets.all(
+              NumericConstants.paddingButton,
+            ),
             child: ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushNamed(_routeList[index].route);
+                Navigator.of(context).pushNamed(
+                  _routeList[index].route,
+                );
               },
-              child: Text(_routeList[index].widgetName),
+              child: Text(
+                _routeList[index].widgetName,
+              ),
             ),
           );
         },

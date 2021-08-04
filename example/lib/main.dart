@@ -18,23 +18,23 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         RouteConstants.homeRoute: (context) => HomePage(),
         RouteConstants.originalTitleRoute: (context) => BasicPage(
-              widget: OriginalTitle(
+              bodyWidget: OriginalTitle(
                 originalTitle: StringConstants.title,
               ),
             ),
         RouteConstants.movieInformationRoute: (context) => BasicPage(
-              widget: MoviesInformation(
+              bodyWidget: MoviesInformation(
                 voteAverage: StringConstants.votes,
                 originalLanguage: StringConstants.language,
               ),
             ),
         RouteConstants.overviewRoute: (context) => BasicPage(
-              widget: Overview(
+              bodyWidget: Overview(
                 overview: StringConstants.overview,
               ),
             ),
         RouteConstants.movieImageRoute: (context) => BasicPage(
-              widget: MovieImage(
+              bodyWidget: MovieImage(
                 imageUrl: StringConstants.imageUrl,
               ),
             ),

@@ -14,12 +14,13 @@ class OriginalTitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(
-            Radius.circular(
-              NumericConstantsWidget.borderRadiusTitle,
-            ),
+        borderRadius: BorderRadius.all(
+          Radius.circular(
+            NumericConstantsWidget.borderRadiusTitle,
           ),
-          color: Colors.black),
+        ),
+        color: Colors.black,
+      ),
       child: Padding(
         padding: const EdgeInsets.all(
           NumericConstantsWidget.paddingTitleDetail,
